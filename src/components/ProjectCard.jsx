@@ -10,7 +10,7 @@ const ProjectCard = ({ projectData }) => {
         alt=""
       />
       <h2 className="text-xl font-semibold">{projectData?.title}</h2>
-      <div className="flex gap-1 items-center ">
+      <div className="flex gap-1 items-center flex-wrap ">
         {projectData?.techStack?.map((item, i) => {
           return (
             <small

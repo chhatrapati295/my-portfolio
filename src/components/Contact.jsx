@@ -1,13 +1,11 @@
 import SendEmail from "./SendEmail";
 const Contact = () => {
   return (
-    <div className=" py-10 flex gap-6 justify-around md:flex-wrap flex-col px-8 ">
+    <div className=" py-10 flex gap-10 justify-around md:flex-wrap flex-col px-8 ">
       <div className=" flex flex-col  md:h-60 ">
         <h2 className="font-bold text-sm text-blue-600">CONTACT</h2>
-        <h2 className="font-bold text-2xl ">
-          Don&apos;t be shy! Hit me up 👉
-        </h2>
-        <div className="flex md:gap-16 gap-2 font-medium md:flex-wrap flex-col my-4">
+        <h2 className="font-bold text-2xl ">Don&apos;t be shy! Hit me up 🚀</h2>
+        <div className="flex md:gap-16 gap-2 font-medium md:flex-wrap flex-col mt-8">
           <div className="flex gap-6 items-center md:my-16">
             <i className="fa-solid fa-map-location-dot w-14 h-14 rounded-full border border-gray-300  hover:shadow-md cursor-pointer flex justify-center items-center text-2xl text-blue-600"></i>
             <div className="flex flex-col gap-[2px]">
