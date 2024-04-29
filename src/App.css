@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+body {
+  background-image: radial-gradient(circle at 100% 200px, #d5c5ff, transparent);
+  width: 100vw;
+  height: 100vh;
+}
+.logo {
+  font-family: "Pacifico", cursive;
+}
+.title {
+  font-size: 3.5rem;
+  color: rgb(65, 61, 61);
+  font-weight: 700;
+  line-height: 0.6 !important;
+  /* text-wrap: stable; */
+}
+
+.lowerBody {
+  width: 75%;
+  margin: 1rem auto auto auto;
+  height: 20%;
+  display: flex;
+  gap: 3rem;
+
+  align-items: center;
+  p {
+    font-size: 1rem;
+    margin: 1rem 0;
+    padding-right: 1rem;
+    border-right: 2px solid black;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: auto;
+    gap: 2rem;
+    li {
+      padding: 1rem;
+      border-radius: 50%;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: all 0.3s ease;
+      }
+      &:hover img {
+        transform: rotate(360deg);
+        transition: all 5s;
+      }
+      .react {
+        animation: rotate360 5s linear infinite;
+      }
+    }
+  }
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.contact_icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-direction: row-reverse;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  i {
+    font-size: 2rem;
+    &:hover {
+      /* color: $primary-color; */
+      transition: all 0.3s ease;
+      animation: vibration 0.3s ease-in-out infinite;
+    }
+  }
+}
+@keyframes vibration {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-0.5px) rotate(-1deg);
+  }
+  50% {
+    transform: translateX(0.5px) rotate(1deg);
+  }
+  75% {
+    transform: translateX(-0.5px) rotate(-1deg);
+  }
+  100% {
+    transform: translateX(0.5px) rotate(1deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .lowerBody {
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
