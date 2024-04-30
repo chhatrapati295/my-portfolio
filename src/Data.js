@@ -22,8 +22,7 @@ export const ProjectsData = [
   },
   {
     title: "TripEasy Weather App",
-    imgSrc:
-      "https://ik.imagekit.io/ywdhkkfvg/image.png?updatedAt=1714469768810",
+    imgSrc: "/assets/Images/weather.png",
     hostUrl: "https://trip-easy-cc.netlify.app/",
     repoUrl: "https://github.com/chhatrapati295/Trip_easy",
     summary:
