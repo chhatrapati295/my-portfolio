@@ -15,7 +15,7 @@ const ProjectCard = ({ projectData }) => {
           return (
             <small
               key={i}
-              className="py-1 px-2 font-medium text-[0.6rem] text-gray-600 rounded-md bg-blue-100 "
+              className="py-1 px-2 font-medium text-[0.6rem] text-gray-600 rounded-md bg-purple-100 "
             >
               {item}
             </small>
@@ -23,12 +23,12 @@ const ProjectCard = ({ projectData }) => {
         })}
       </div>
       <p className="text-xs py-4 text-gray-600">{projectData?.summary}</p>
-      <div className="flex gap-3">
+      <div className="flex gap-3 justify-end">
         <a
           href={projectData?.repoUrl}
           rel="noreferrer"
           target="_blank"
-          className="py-1 px-4 text-xs outline-none border rounded-md bg-gray-200 font-medium hover:bg-gray-300 flex items-center gap-2 "
+          className="py-1 px-4 text-[0.6rem] outline-none rounded-md bg-gray-200 font-medium hover:bg-gray-100 transition-all duration-150 flex items-center gap-2 "
         >
           Code <i className="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
@@ -36,7 +36,7 @@ const ProjectCard = ({ projectData }) => {
           rel="noreferrer"
           target="_blank"
           href={projectData?.hostUrl}
-          className="py-1 px-4 text-xs outline-none border rounded-md bg-gray-200 font-medium hover:bg-gray-300 flex items-center gap-2 "
+          className="py-1 px-4 text-[0.6rem] outline-none rounded-md bg-gray-200 font-medium hover:bg-gray-100 transition-all duration-150 flex items-center gap-2 "
         >
           Preview <i className="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
