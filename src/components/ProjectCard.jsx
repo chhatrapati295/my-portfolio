@@ -6,7 +6,7 @@ const ProjectCard = ({ projectData }) => {
     <div className=" p-6 rounded-md flex flex-col gap-2 md:w-[50%] w-10/12 bg-white ">
       <img
         src={projectData?.imgSrc}
-        className=" w-full   bg-white mb-4 border-b border-gray-200 pb-8"
+        className=" w-full   bg-white mb-4 border-b border-gray-200 pb-8 rounded-tl-sm rounded-tr-sm"
         alt=""
       />
       <h2 className="text-xl font-semibold">{projectData?.title}</h2>
@@ -26,9 +26,13 @@ const ProjectCard = ({ projectData }) => {
       <div className="flex gap-3 justify-end">
         <a
           href={projectData?.repoUrl}
+          title={!projectData?.repoUrl && "Code is not available"}
           rel="noreferrer"
           target="_blank"
-          className="py-1 px-4 text-[0.6rem] outline-none rounded-md bg-gray-200 font-medium hover:bg-gray-100 transition-all duration-150 flex items-center gap-2 "
+          className={
+            `py-1 px-4 text-[0.6rem] outline-none rounded-md bg-gray-200 font-medium hover:bg-gray-100 transition-all duration-150 flex items-center gap-2 ` +
+            `${!projectData?.repoUrl && "cursor-not-allowed"}`
+          }
         >
           Code <i className="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
@@ -36,7 +40,11 @@ const ProjectCard = ({ projectData }) => {
           rel="noreferrer"
           target="_blank"
           href={projectData?.hostUrl}
-          className="py-1 px-4 text-[0.6rem] outline-none rounded-md bg-gray-200 font-medium hover:bg-gray-100 transition-all duration-150 flex items-center gap-2 "
+          title={!projectData?.hostUrl && "Preview is not available"}
+          className={
+            `py-1 px-4 text-[0.6rem] outline-none rounded-md bg-gray-200 font-medium hover:bg-gray-100 transition-all duration-150 flex items-center gap-2 ` +
+            `${!projectData?.hostUrl && "cursor-not-allowed"}`
+          }
         >
           Preview <i className="fa-solid fa-arrow-up-right-from-square"></i>
         </a>

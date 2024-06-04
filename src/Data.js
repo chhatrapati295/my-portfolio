@@ -1,5 +1,23 @@
 export const ProjectsData = [
   {
+    title: "Job Portal",
+    imgSrc:
+      "https://ik.imagekit.io/ywdhkkfvg/Screenshot%202024-06-04%20at%202.32.35%E2%80%AFPM.png?updatedAt=1717492043739",
+    hostUrl: "https://chhatrapati-fp.squareboat.info/",
+    // repoUrl: "https://github.com/chhatrapati295/my-youtube",
+    summary:
+      "My job portal project streamlines the hiring process by connecting job seekers with employers. Users can easily sign up and choose their role - recruiter or candidate. Recruiters can post jobs and manage applications, while candidates can browse openings, apply with a click, and track their applications. It is a one-stop shop for finding the perfect job or filling open positions.",
+    techStack: [
+      "Next js",
+      "TypeScript",
+      "tailwind css",
+      "Formik",
+      "React Query",
+      "Sentry",
+      "Google ReCaptcha",
+    ],
+  },
+  {
     title: "Youtube clone",
     imgSrc:
       "https://ik.imagekit.io/ywdhkkfvg/Screenshot%202024-04-19%20075114.png?updatedAt=1713506996490",

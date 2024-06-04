@@ -1,10 +1,11 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const SendEmail = () => {
   const form = useRef();
+  const [btnDisable, setBtnDisable] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -16,6 +17,7 @@ const SendEmail = () => {
       toast.warning("Please input fields first!");
       return;
     }
+    setBtnDisable(true);
     emailjs
       .sendForm("service_x2ukgvy", "template_1ll9pcm", form.current, {
         publicKey: "_NWatL1_M0amDUyPb",
@@ -24,6 +26,9 @@ const SendEmail = () => {
         () => {
           toast.success("Email sent successfully!");
           form.current.reset();
+          setTimeout(() => {
+            setBtnDisable(false);
+          }, 1000);
         },
         (error) => {
           toast.error("Failed to send email.");
@@ -76,8 +81,12 @@ const SendEmail = () => {
           required
         />
         <button
-          className="border rounded-md p-2 bg-blue-600 text-white"
+          className={
+            `border rounded-md p-2 bg-blue-600 text-white ` +
+            `${btnDisable && "cursor-not-allowed"}`
+          }
           type="submit"
+          disabled={btnDisable}
         >
           Send message
         </button>

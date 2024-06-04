@@ -5,7 +5,7 @@ const Contact = () => {
       <div className=" flex flex-col  md:h-60 ">
         <h2 className="font-bold text-sm text-blue-600">CONTACT</h2>
         <h2 className="font-bold text-2xl ">
-          Don&apos;t be shy, Send me a Hi{" "}
+          Don&apos;t be shy, Send me Hi{" "}
           <span className="hidden md:inline-block">🚀</span>
         </h2>
         <div className="flex md:gap-16 gap-2 font-medium md:flex-row flex-col md:m-0 mt-8">
