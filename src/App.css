@@ -7,7 +7,7 @@
   font-family: "Rubik", sans-serif;
 }
 body {
-  background-image: radial-gradient(circle at 80% 100px, #d5c5ff, transparent);
+  /* background-image: radial-gradient(circle at 80% 100px, #d5c5ff, transparent); */
 
   /* background-image: radial-gradient(circle at 50% 50px, #bac6fd, transparent); */
   width: 100vw;
