@@ -10,6 +10,8 @@ body {
   /* background-image: radial-gradient(circle at 80% 100px, #d5c5ff, transparent); */
 
   /* background-image: radial-gradient(circle at 50% 50px, #bac6fd, transparent); */
+  /* background: radial-gradient(circle 800px at 100% 200px, #d5c5ff, transparent); */
+
   width: 100vw;
   height: 100vh;
 }
@@ -40,15 +42,15 @@ body {
   }
   ul {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     list-style: none;
     margin: auto;
-    gap: 2rem;
+    /* gap: 2rem; */
     li {
       padding: 1rem;
-      height: 60px;
-      width: 60px;
+      height: 4.3rem;
+      width: 4.3rem;
       border-radius: 50%;
       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
       display: flex;
@@ -114,4 +116,3 @@ body {
     transform: translateX(0.5px) rotate(1deg);
   }
 }
-

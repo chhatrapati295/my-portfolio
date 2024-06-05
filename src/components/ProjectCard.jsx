@@ -24,7 +24,7 @@ const ProjectCard = ({ projectData }) => {
       </div>
       <p className="text-xs py-4 text-gray-600">{projectData?.summary}</p>
       <div className="flex gap-3 justify-end">
-        <a
+        {projectData?.repoUrl && <a
           href={projectData?.repoUrl}
           title={!projectData?.repoUrl && "Code is not available"}
           rel="noreferrer"
@@ -35,7 +35,7 @@ const ProjectCard = ({ projectData }) => {
           }
         >
           Code <i className="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
+        </a>}
         <a
           rel="noreferrer"
           target="_blank"
