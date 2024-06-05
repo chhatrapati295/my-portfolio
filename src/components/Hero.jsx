@@ -6,7 +6,7 @@ import Palm from "/assets/palm.png";
 const Hero = () => {
   return (
     <div className="min-h-[90vh]">
-      <div className="flex flex-col md:flex-row gap-12 min-h-[73vh] justify-center md:justify-around items-center md:px-4 md:p-2">
+      <div className="flex flex-col md:flex-row gap-12 min-h-[73vh] justify-center md:justify-around items-center md:px-4 md:p-2 mt-16 md:m-0">
         <div className="md:w-1/2 flex justify-center items-center">
           <motion.img
             src={HeroImg}
@@ -24,7 +24,7 @@ const Hero = () => {
           className="flex flex-col items-start md:gap-2 gap-3 md:w-1/2 w-10/12 md:p-0 text-center"
         >
           <div className="flex items-center gap-4 w-full md:justify-start justify-center">
-            <h2 className="md:text-[3rem] whitespace-nowrap text-3xl title">
+            <h2 className="md:text-[3rem] md:text-[rgb(65, 61, 61)]  text-gray-700 whitespace-nowrap text-3xl title">
               Frontend Engineer
             </h2>
             <img
@@ -34,17 +34,18 @@ const Hero = () => {
             />
           </div>
           <div className="flex items-center gap-2 md:justify-start justify-center w-full">
-            <p className="text-[#7d7d7f] text-center">
+            <p className="md:text-[#7d7d7f] text-gray-700 text-center">
               @ Squareboat, Gurugram 📍
             </p>
           </div>
           <p className="mt-4 md:text-balance md:text-start text-center">
-            Hello, I&apos;m Chhatrapati Chauhan, a skilled Front-end Engineer. Specializing in creating visually
-            appealing and user-friendly websites, I focus on delivering seamless
-            and engaging user experiences. With a keen eye for detail and a
-            passion for excellence, I transform creative concepts into
-            high-performing web applications. Let&apos;s collaborate to create
-            exceptional digital experiences.
+            Hello, I&apos;m Chhatrapati Chauhan, a skilled Front-end Engineer.
+            Specializing in creating visually appealing and user-friendly
+            websites, I focus on delivering seamless and engaging user
+            experiences. With a keen eye for detail and a passion for
+            excellence, I transform creative concepts into high-performing web
+            applications. Let&apos;s collaborate to create exceptional digital
+            experiences.
           </p>
         </motion.div>
       </div>

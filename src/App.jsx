@@ -9,7 +9,7 @@ import RightPortion from "./components/RightPortion";
 
 function App() {
   return (
-    <div className="flex flex-col w-full h-screen overflow-x-hidden bg-[radial-gradient(circle_800px_at_100%_200px,#d5c5ff,transparent)]">
+    <div className="flex flex-col w-full h-screen overflow-x-hidden bg-white bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(252,205,238,.5)_100%)]">
       <Header />
       <div className=" pt-14 flex flex-col md:gap-12 gap-6">
         <Hero />
@@ -22,5 +22,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;

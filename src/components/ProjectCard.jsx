@@ -24,18 +24,20 @@ const ProjectCard = ({ projectData }) => {
       </div>
       <p className="text-xs py-4 text-gray-600">{projectData?.summary}</p>
       <div className="flex gap-3 justify-end">
-        {projectData?.repoUrl && <a
-          href={projectData?.repoUrl}
-          title={!projectData?.repoUrl && "Code is not available"}
-          rel="noreferrer"
-          target="_blank"
-          className={
-            `py-1 px-4 text-[0.6rem] outline-none rounded-md bg-gray-200 font-medium hover:bg-gray-100 transition-all duration-150 flex items-center gap-2 ` +
-            `${!projectData?.repoUrl && "cursor-not-allowed"}`
-          }
-        >
-          Code <i className="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>}
+        {projectData?.repoUrl && (
+          <a
+            href={projectData?.repoUrl}
+            title={!projectData?.repoUrl && "Code is not available"}
+            rel="noreferrer"
+            target="_blank"
+            className={
+              `py-1 px-4 text-[0.6rem] outline-none rounded-md bg-gray-200 font-medium hover:bg-gray-100 transition-all duration-150 flex items-center gap-2 ` +
+              `${!projectData?.repoUrl && "cursor-not-allowed"}`
+            }
+          >
+            Code <i className="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        )}
         <a
           rel="noreferrer"
           target="_blank"
