@@ -50,7 +50,7 @@ const SendEmail = () => {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="md:px-4 flex flex-col gap-1 text-[0.8rem]  rounded-md"
+        className=" flex flex-col gap-1 text-[0.8rem]  rounded-md"
       >
         <label className="font-medium text-[0.7rem] text-gray-600">
           Your name

@@ -1,6 +1,12 @@
+import { motion } from "framer-motion";
 const Skills = () => {
   return (
-    <div className="lowerBody flex flex-col">
+    <motion.div
+      className="lowerBody flex flex-col"
+      initial={{ y: "150%", opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+    >
       <span className="font-medium uppercase md:hidden mt-6">* Skills *</span>
       {/* <p>Tech Stack</p> */}
       <ul className="flex-wrap md:flex md:flex-nowrap w-11/12 md:gap-0 gap-12 md:justify-around justify-center ">
@@ -28,21 +34,13 @@ const Skills = () => {
           <img className="" src="./assets/Images/nextjs.svg" alt="" />
         </li>
         <li title="react">
-          <img
-            className=" react"
-            src="./assets/Svg/react.svg"
-            alt=""
-          />
+          <img className=" react" src="./assets/Svg/react.svg" alt="" />
         </li>
         <li title="tailwind-css">
           <img className="" src="./assets/Svg/tailwind.svg" alt="" />
         </li>
         <li title="bootstrap">
-          <img
-            className=""
-            src="./assets/Images/bootstrap.png"
-            alt=""
-          />
+          <img className="" src="./assets/Images/bootstrap.png" alt="" />
         </li>
         <li title="ant design">
           <img className="" src="./assets/Svg/antd.svg" alt="" />
@@ -57,7 +55,7 @@ const Skills = () => {
           <img className="" src="./assets/Images/git.png" alt="" />
         </li>
       </ul>
-    </div>
+    </motion.div>
   );
 };
 

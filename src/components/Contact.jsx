@@ -1,8 +1,8 @@
 import SendEmail from "./SendEmail";
 const Contact = () => {
   return (
-    <div className=" py-10 flex gap-10 justify-around md:flex-row flex-col px-8 ">
-      <div className=" flex flex-col  md:h-60 ">
+    <div className=" py-10 md:w-11/12 w-10/12 m-auto flex gap-10 justify-around md:flex-row flex-col">
+      <div className=" flex flex-col  md:h-60">
         <h2 className="font-bold text-sm text-blue-600">CONTACT</h2>
         <h2 className="font-bold text-2xl ">
           Don&apos;t be shy, Send me Hi{" "}

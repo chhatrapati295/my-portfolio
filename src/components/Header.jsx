@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div className="fixed top-0 left-0 right-0 md:px-2 px-6 py-4 flex justify-between md:w-11/12 w-full m-auto items-center  backdrop-filter md:backdrop-blur-sm backdrop-blur-xl ">
+    <div className="fixed top-0 left-0 right-0 md:px-2 px-6 py-4 flex justify-between md:w-11/12 w-full m-auto items-center  backdrop-filter md:backdrop-blur-sm backdrop-blur-xl z-50 ">
       <a href="/" className="md:text-gray-700 logo md:text-xl text-xl">
         Chhatrapati.dev
       </a>
