@@ -1,6 +1,6 @@
 // import { Icon } from "@iconify/react/dist/iconify.js";
 import Skills from "./Skills";
-import HeroImg from "/assets/body_img2.png";
+import HeroImg from "/assets/body_img4.webp";
 import Palm from "/assets/palm.png";
 const Hero = () => {
   return (
