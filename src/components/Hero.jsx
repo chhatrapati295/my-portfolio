@@ -16,7 +16,8 @@ const Hero = () => {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
             style={{ willChange: "transform, opacity" }}
-            loading="lazy"
+            loading="eager"
+            
           />
         </div>
         <motion.div
