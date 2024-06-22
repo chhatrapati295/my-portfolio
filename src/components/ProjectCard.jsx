@@ -10,12 +10,12 @@ const ProjectCard = ({ projectData }) => {
         alt=""
       />
       <h2 className="text-xl font-semibold">{projectData?.title}</h2>
-      <div className="flex gap-1 items-center flex-wrap ">
+      <div className="flex gap-2 items-center flex-wrap ">
         {projectData?.techStack?.map((item, i) => {
           return (
             <small
               key={i}
-              className="py-1 px-2 font-medium text-[0.6rem] text-gray-600 rounded-md bg-purple-100 "
+              className="py-1 px-2 font-medium text-[0.6rem] capitalize text-gray-600 rounded-md bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(252,205,238,.5)_100%)]"
             >
               {item}
             </small>
@@ -31,7 +31,7 @@ const ProjectCard = ({ projectData }) => {
             rel="noreferrer"
             target="_blank"
             className={
-              `py-1 px-4 text-[0.6rem] outline-none rounded-md bg-gray-200 font-medium hover:bg-gray-100 transition-all duration-150 flex items-center gap-2 ` +
+              `py-1 px-4 text-[0.7rem] outline-none rounded-[4px] bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(252,205,238,.5)_100%)] font-normal hover:bg-[rgba(252,205,238,.2)] text-black border border-black transition-all duration-150 flex items-center gap-2 ` +
               `${!projectData?.repoUrl && "cursor-not-allowed"}`
             }
           >
@@ -44,7 +44,7 @@ const ProjectCard = ({ projectData }) => {
           href={projectData?.hostUrl}
           title={!projectData?.hostUrl && "Preview is not available"}
           className={
-            `py-1 px-4 text-[0.6rem] outline-none rounded-md bg-gray-200 font-medium hover:bg-gray-100 transition-all duration-150 flex items-center gap-2 ` +
+            `py-1 px-4 text-[0.7rem] outline-none rounded-[4px] bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(252,205,238,.5)_100%)] font-normal hover:bg-[rgba(252,205,238,.2)] text-black border border-black transition-all duration-150 flex items-center gap-2 ` +
             `${!projectData?.hostUrl && "cursor-not-allowed"}`
           }
         >

@@ -9,7 +9,7 @@ const Skills = () => {
     >
       <span className="font-medium uppercase md:hidden mt-6">* Skills *</span>
       {/* <p>Tech Stack</p> */}
-      <ul className="flex-wrap md:flex md:flex-nowrap w-11/12 md:gap-0 gap-12 md:justify-around justify-center ">
+      <ul className="flex-wrap flex md:flex xl:flex-nowrap md:flex-wrap w-11/12 xl:gap-0 md:gap-x-20 gap-12 md:justify-around justify-center ">
         <li title="html">
           <img className="" src="./assets/Images/html.png" alt="" />
         </li>
