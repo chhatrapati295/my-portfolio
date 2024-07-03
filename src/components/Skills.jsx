@@ -1,11 +1,7 @@
-import { motion } from "framer-motion";
 const Skills = () => {
   return (
-    <motion.div
+    <div
       className="lowerBody flex flex-col"
-      initial={{ y: "150%", opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 1, ease: "easeOut" }}
     >
       <span className="font-medium uppercase md:hidden mt-6">* Skills *</span>
       {/* <p>Tech Stack</p> */}
@@ -55,7 +51,7 @@ const Skills = () => {
           <img className="" src="./assets/Images/git.png" alt="" />
         </li>
       </ul>
-    </motion.div>
+    </div>
   );
 };
 

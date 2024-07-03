@@ -1,6 +1,5 @@
-import { motion } from "framer-motion";
 import Skills from "./Skills";
-import HeroImg from "/assets/body_img4.webp";
+// import HeroImg from "/assets/body_img4.webp";
 import Palm from "/assets/palm.png";
 
 const Hero = () => {
@@ -8,22 +7,15 @@ const Hero = () => {
     <div className="min-h-[90vh] relative">
       <div className="flex flex-col md:flex-row gap-12 md:min-h-[73vh] min-h-[70vh] justify-center md:justify-around items-center md:px-4 md:p-2">
         <div className="md:w-1/2 flex justify-center items-center">
-          <motion.img
-            src={HeroImg}
+          <img
+            // src={HeroImg}
+            src={'https://ik.imagekit.io/ywdhkkfvg/body_img4.webp?updatedAt=1720023653941'}
             alt="Hero"
             className="h-48 w-h-48 md:h-[40vh] md:m-0 md:w-auto sm:mt-[10vh] mt-[12vh]"
-            initial={{ x: "-150%", opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-            style={{ willChange: "transform, opacity" }}
             loading="eager"
           />
         </div>
-        <motion.div
-          initial={{ x: "150%", opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          style={{ willChange: "transform, opacity" }}
+        <div
           className="flex flex-col items-start md:gap-2 gap-3 md:w-1/2 w-10/12 md:p-0 text-center"
         >
           <div className="flex items-center gap-4 w-full md:justify-start justify-center">
@@ -53,7 +45,7 @@ const Hero = () => {
               Let&apos;s collaborate to create exceptional digital experiences.
             </p>
           </p>
-        </motion.div>
+        </div>
         <img
           src="../../public/assets/Images/grass.png"
           className="absolute xl:block hidden -top-14 -right-10 h-40 z-50"
