@@ -1,28 +1,34 @@
+import { lazy, Suspense } from "react";
 import "./App.css";
-import AboutMe from "./components/AboutMe";
-import Contact from "./components/Contact";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import LeftPortion from "./components/LeftPortion";
-import Projects from "./components/Projects";
-import RightPortion from "./components/RightPortion";
+
+const AboutMe = lazy(() => import("./components/AboutMe"));
+const LeftPortion = lazy(() => import("./components/LeftPortion"));
+const Projects = lazy(() => import("./components/Projects"));
+const RightPortion = lazy(() => import("./components/RightPortion"));
+const Contact = lazy(() => import("./components/Contact"));
 
 function App() {
+  // const supabase = createClient(
+  //   "https://yllzfjjtxritncxrrwnu.supabase.co",
+  //   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlsbHpmamp0eHJpdG5jeHJyd251Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjA1MDU1MjMsImV4cCI6MjAzNjA4MTUyM30.2vn_COFpE-JSG9hUsnWajQHY3RB20axPqORmWXoeEcI"
+  // );
   return (
     <div className="flex flex-col w-full h-screen overflow-x-hidden bg-white bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(252,205,238,.5)_100%)]">
       <Header />
-      <div className=" pt-14 flex flex-col md:gap-12 gap-6">
+      <div className="pt-14 flex flex-col md:gap-12 gap-6">
         <Hero />
-        <AboutMe />
-        <LeftPortion />
-        <Projects />
-        <RightPortion />
-        <Contact />
+        <Suspense fallback={<div>Loading...</div>}>
+          <AboutMe />
+          <LeftPortion />
+          <Projects />
+          <RightPortion />
+          <Contact />
+        </Suspense>
       </div>
     </div>
   );
 }
-
-
 
 export default App;

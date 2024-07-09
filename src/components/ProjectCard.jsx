@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 
 const ProjectCard = ({ projectData }) => {
-  console.log(projectData);
   return (
     <div className=" p-6 rounded-md flex flex-col gap-2 md:w-[50%] w-10/12 bg-white ">
       <img
@@ -27,7 +26,7 @@ const ProjectCard = ({ projectData }) => {
         {projectData?.repoUrl && (
           <a
             href={projectData?.repoUrl}
-            title={!projectData?.repoUrl && "Code is not available"}
+            // title={projectData?.repoUrl === '' && "Code is not available"}
             rel="noreferrer"
             target="_blank"
             className={
@@ -42,7 +41,7 @@ const ProjectCard = ({ projectData }) => {
           rel="noreferrer"
           target="_blank"
           href={projectData?.hostUrl}
-          title={!projectData?.hostUrl && "Preview is not available"}
+          // title={!projectData?.hostUrl && "Preview is not available"}
           className={
             `py-1 px-4 text-[0.7rem] outline-none rounded-[4px] bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(252,205,238,.5)_100%)] font-normal hover:bg-[rgba(252,205,238,.2)] text-black border border-black transition-all duration-150 flex items-center gap-2 ` +
             `${!projectData?.hostUrl && "cursor-not-allowed"}`
@@ -61,8 +60,8 @@ ProjectCard.propTypes = {
     title: PropTypes.string.isRequired,
     techStack: PropTypes.arrayOf(PropTypes.string),
     summary: PropTypes.string.isRequired,
-    repoUrl: PropTypes.string.isRequired,
-    hostUrl: PropTypes.string.isRequired,
+    repoUrl: PropTypes.string,
+    hostUrl: PropTypes.string,
   }).isRequired,
 };
 

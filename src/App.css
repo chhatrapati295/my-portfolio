@@ -116,3 +116,20 @@ body {
     transform: translateX(0.5px) rotate(1deg);
   }
 }
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: none;
+  }
+}
+.download_icon {
+}
+
+.download_btn:hover .download_icon {
+  animation: bounce 1s infinite;
+  color: rgb(46, 46, 255);
+}

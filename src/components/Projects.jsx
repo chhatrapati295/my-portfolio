@@ -9,7 +9,6 @@ const Projects = () => {
     setProjectData(data);
   }, [data]);
 
-  console.log(projectData);
 
   return (
     <div className="py-16 flex flex-col gap-8 items-center">
