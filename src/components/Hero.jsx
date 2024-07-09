@@ -6,8 +6,10 @@ import Palm from "/assets/palm.png";
 const Hero = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/public/chhatrapati_resume.pdf";
-    link.download = "chhatrapati_resume"; 
+    link.href =
+      "https://drive.google.com/file/d/1DY9ejH5MbvtVL6-tZlaalA0S5sZeZwFI/view?usp=drive_link";
+    link.target = "_blank";
+    link.download = "chhatrapati_resume";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
