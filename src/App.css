@@ -12,7 +12,7 @@ body {
   /* background-image: radial-gradient(circle at 50% 50px, #bac6fd, transparent); */
   /* background: radial-gradient(circle 800px at 100% 200px, #d5c5ff, transparent); */
 
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 .logo {
