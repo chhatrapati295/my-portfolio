@@ -28,8 +28,8 @@ body {
 
 .lowerBody {
   /* width: 75%; */
-  margin: 1rem auto auto auto;
-  height: 20%;
+  /* margin: 1rem auto auto auto; */
+  /* height: 20%; */
   display: flex;
   gap: 3rem;
 

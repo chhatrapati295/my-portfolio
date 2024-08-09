@@ -15,7 +15,7 @@ const Hero = () => {
     document.body.removeChild(link);
   };
   return (
-    <div className="min-h-[90vh] relative">
+    <div className="min-h-screen flex flex-col justify-between py-12  relative">
       <div className="flex flex-col md:flex-row gap-12 md:min-h-[73vh] min-h-[70vh] justify-center md:justify-around items-center md:px-4 md:p-2">
         <div className="md:w-1/2 flex justify-center items-center">
           <img
