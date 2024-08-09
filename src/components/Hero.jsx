@@ -66,7 +66,7 @@ const Hero = () => {
         </div>
         <img
           src="../../public/assets/Images/grass.png"
-          className="absolute lg:block hidden -top-14 -right-10 h-40 z-50"
+          className="absolute md:block hidden -top-7 -right-10 h-40 z-50"
           alt=""
         />
       </div>
