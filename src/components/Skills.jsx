@@ -1,7 +1,7 @@
 const Skills = () => {
   return (
     <div
-      className="lowerBody flex flex-col"
+      className="lowerBody flex flex-col z-30"
     >
       <span className="font-medium uppercase md:hidden mt-6">* Skills *</span>
       {/* <p>Tech Stack</p> */}

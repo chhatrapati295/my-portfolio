@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const ProjectCard = ({ projectData }) => {
   return (
-    <div className=" p-6 rounded-md flex flex-col gap-2 md:w-[50%] w-10/12 bg-white ">
+    <div className=" p-6 rounded-md z-30 flex flex-col gap-2 md:w-[50%] w-10/12 bg-white ">
       <img
         src={projectData?.imgSrc}
         className=" w-full   bg-white mb-4 border-b border-gray-200 pb-8 rounded-tl-sm rounded-tr-sm"

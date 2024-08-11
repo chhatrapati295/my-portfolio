@@ -23,11 +23,11 @@ const Hero = () => {
               "https://ik.imagekit.io/ywdhkkfvg/body_img4.webp?updatedAt=1720023653941"
             }
             alt="Hero"
-            className="h-48 w-h-48 md:h-[40vh] md:m-0 md:w-auto sm:mt-[10vh] mt-[12vh]"
+            className="h-48 z-30 w-h-48 md:h-[40vh] md:m-0 md:w-auto sm:mt-[10vh] mt-[12vh]"
             loading="eager"
           />
         </div>
-        <div className="flex flex-col items-start md:gap-2 gap-3 md:w-1/2 w-10/12 md:p-0 text-center">
+        <div className="flex flex-col items-start md:gap-2 gap-3 md:w-1/2 w-10/12 md:p-0 text-center z-30">
           <div className="flex items-center gap-4 w-full md:justify-start justify-center">
             <h2 className="md:text-[2rem] lg:text-[2rem] xl:text-[3rem] md:text-black text-gray-700 whitespace-nowrap text-3xl title">
               Frontend Engineer
@@ -64,11 +64,6 @@ const Hero = () => {
             />{" "}
           </button>
         </div>
-        <img
-          src="../../public/assets/Images/grass.png"
-          className="absolute md:block hidden -top-7 -right-10 h-40 z-50"
-          alt=""
-        />
       </div>
       <Skills />
     </div>
