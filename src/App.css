@@ -58,12 +58,12 @@ body {
       align-items: center;
       cursor: pointer;
       &:hover {
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
         transition: all 0.3s ease;
       }
       &:hover img {
         transform: rotate(360deg);
-        transition: all 5s;
+        transition: all 4s;
       }
       .react {
         animation: rotate360 5s linear infinite;
@@ -120,7 +120,7 @@ body {
 @keyframes bounce {
   0%,
   100% {
-    transform: translateY(-5%);
+    transform: translateY(-25%);
   }
   50% {
     transform: none;

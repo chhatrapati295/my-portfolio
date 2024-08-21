@@ -7,7 +7,7 @@ const Hero = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href =
-      "https://drive.google.com/file/d/1DY9ejH5MbvtVL6-tZlaalA0S5sZeZwFI/view?usp=drive_link";
+      "https://drive.google.com/file/d/1lWtb2kZIKmWPslwjg0UOUWtp2-kdaL79/view?usp=drive_link";
     link.target = "_blank";
     link.download = "chhatrapati_resume";
     document.body.appendChild(link);
@@ -40,9 +40,13 @@ const Hero = () => {
             />
           </div>
           <div className="flex items-center gap-2 md:justify-start justify-center w-full">
-            <p className="md:text-[#7d7d7f] text-gray-700 text-center">
+            <a
+              href="https://squareboat.com/"
+              target="_blank"
+              className="md:text-[#7d7d7f] text-gray-700 text-center  hover:text-blue-600"
+            >
               @ Squareboat, Gurugram 📍
-            </p>
+            </a>
           </div>
           <div className="mt-4 md:text-balance md:text-start text-center">
             Hello, I&apos;m Chhatrapati Chauhan, a skilled Front-end Engineer.
