@@ -27,8 +27,8 @@ function App() {
       <div className="flex flex-col md:gap-12 gap-6">
         <Hero />
         <Suspense fallback={<div>Loading...</div>}>
-          <AboutMe />
-          <LeftPortion />
+          {/* <AboutMe /> */}
+          {/* <LeftPortion /> */}
           <Projects />
           <RightPortion />
           <Contact />
