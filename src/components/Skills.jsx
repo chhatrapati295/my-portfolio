@@ -3,7 +3,7 @@ const Skills = () => {
     <div
       className="lowerBody flex flex-col z-30"
     >
-      <span className="font-medium uppercase md:hidden mt-6">* Skills *</span>
+      <span className="font-medium uppercase md:hidden mt-20">* Skills *</span>
       {/* <p>Tech Stack</p> */}
       <ul className="flex-wrap flex md:flex xl:flex-nowrap md:flex-wrap w-11/12 xl:gap-0 md:gap-x-20 gap-12 md:justify-around justify-center ">
         <li title="html">

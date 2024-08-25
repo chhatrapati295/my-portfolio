@@ -2,7 +2,7 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 import SendEmail from "./SendEmail";
 const Contact = () => {
   return (
-    <div className=" py-10 px-2 md:w-11/12 w-10/12 m-auto flex gap-10 justify-between xl:flex-row md:flex-col flex-col z-30">
+    <div className=" py-10 md:w-11/12 w-10/12 m-auto flex gap-10 justify-between xl:flex-row md:flex-col flex-col z-30">
       <div className=" flex flex-col  md:h-60">
         <h2 className="font-bold text-sm text-blue-600">CONTACT</h2>
         <h2 className="font-bold text-2xl ">

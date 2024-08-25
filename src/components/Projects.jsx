@@ -10,7 +10,7 @@ const Projects = () => {
   }, [data]);
 
   return (
-    <div className="py-16 flex flex-col gap-16 items-center">
+    <div className="md:py-16 pb-16 pt-0 flex flex-col gap-16 items-center">
       <span className="md:hidden font-medium uppercase">* Projects *</span>
       <h4 className="text-5xl md:block hidden  font-bold whitespace-nowrap z-30 text-slate-400 animate-pulse opacity-25">
         PROJECTS
