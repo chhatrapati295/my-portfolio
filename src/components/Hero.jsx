@@ -30,7 +30,7 @@ const Hero = () => {
         <div className="flex flex-col items-start md:gap-2 gap-3 md:w-1/2 w-10/12 md:p-0 text-center z-30">
           <div className="flex items-center gap-4 w-full md:justify-start justify-center">
             <h2 className="md:text-[2rem] lg:text-[2rem] xl:text-[3rem] md:text-black text-gray-700 whitespace-nowrap text-3xl title">
-              Frontend Engineer
+              Software Engineer
             </h2>
             <img
               className="w-10 h-10 md:w-8 xl:w-12 md:h-8 xl:h-12 md:block hidden"
