@@ -30,7 +30,7 @@ const Hero = () => {
         <div className="flex flex-col items-start md:gap-2 gap-3 md:w-1/2 w-10/12 md:p-0 text-center z-30">
           <div className="flex items-center gap-4 w-full md:justify-start justify-center">
             <h2 className="md:text-[2rem] lg:text-[2rem] xl:text-[3rem] md:text-black text-gray-700 whitespace-nowrap text-3xl title">
-              Software Engineer
+              Frontend Engineer
             </h2>
             <img
               className="w-10 h-10 md:w-8 xl:w-12 md:h-8 xl:h-12 md:block hidden"
@@ -59,13 +59,13 @@ const Hero = () => {
           </div>
           <button
             onClick={handleDownload}
-            className={`flex gap-1 items-center text-sm border border-[#7d7d7f] outline-none rounded-md py-[6px] px-4 active:scale-90 transition-all duration-300 ease-in-out md:mx-0 mx-auto download_btn`}
+            className={`flex gap-2 items-center text-sm border border-[#7d7d7f] outline-none rounded-md py-[6px] px-4 active:scale-90 transition-all duration-300 ease-in-out md:mx-0 mx-auto download_btn`}
           >
-            Download Resume{" "}
+            View Resume
             <Icon
-              icon="material-symbols:download"
-              className="download_icon transition-all duration-300 ease-in-out"
-            />{" "}
+              icon="mdi:eye"
+              className="transition-all duration-300 animate-pulse eye"
+            />
           </button>
         </div>
       </div>

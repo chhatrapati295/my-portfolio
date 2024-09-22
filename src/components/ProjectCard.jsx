@@ -2,10 +2,10 @@ import PropTypes from "prop-types";
 
 const ProjectCard = ({ projectData }) => {
   return (
-    <div className=" p-6 rounded-md z-30 flex flex-col gap-2 md:w-[50%] w-10/12 bg-white ">
+    <div className=" p-6 rounded-3xl z-30 flex flex-col gap-2 md:w-[50%] w-10/12 bg-white bg-opacity-50 backdrop-blur-xl backdrop-saturate-150 backdrop-opacity-80  shadow-sm">
       <img
         src={projectData?.imgSrc}
-        className=" w-full   bg-white mb-4 border-b border-gray-200 pb-8 rounded-tl-sm rounded-tr-sm"
+        className=" w-full bg-white mb-4 pb-8 rounded-tl-sm rounded-tr-sm"
         alt=""
       />
       <h2 className="text-xl font-semibold">{projectData?.title}</h2>
@@ -26,7 +26,6 @@ const ProjectCard = ({ projectData }) => {
         {projectData?.repoUrl && (
           <a
             href={projectData?.repoUrl}
-            // title={projectData?.repoUrl === '' && "Code is not available"}
             rel="noreferrer"
             target="_blank"
             className={
@@ -41,7 +40,6 @@ const ProjectCard = ({ projectData }) => {
           rel="noreferrer"
           target="_blank"
           href={projectData?.hostUrl}
-          // title={!projectData?.hostUrl && "Preview is not available"}
           className={
             `py-1 px-4 text-[0.7rem] outline-none rounded-[4px] bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(252,205,238,.5)_100%)] font-normal hover:bg-[rgba(252,205,238,.2)] text-black border border-black transition-all duration-150 flex items-center gap-2 ` +
             `${!projectData?.hostUrl && "cursor-not-allowed"}`

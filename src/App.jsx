@@ -3,9 +3,10 @@ import "./App.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import StarsCanvas from "./components/starBg";
+import ExperienceComp from "./components/MyExperience";
 
-const AboutMe = lazy(() => import("./components/AboutMe"));
-const LeftPortion = lazy(() => import("./components/LeftPortion"));
+// const AboutMe = lazy(() => import("./components/AboutMe"));
+// const LeftPortion = lazy(() => import("./components/LeftPortion"));
 const Projects = lazy(() => import("./components/Projects"));
 const RightPortion = lazy(() => import("./components/RightPortion"));
 const Contact = lazy(() => import("./components/Contact"));
@@ -29,6 +30,7 @@ function App() {
         <Suspense fallback={<div>Loading...</div>}>
           {/* <AboutMe /> */}
           {/* <LeftPortion /> */}
+          {/* <ExperienceComp /> */}
           <Projects />
           <RightPortion />
           <Contact />

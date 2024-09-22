@@ -41,7 +41,8 @@ const SendEmail = () => {
     <div>
       <ToastContainer
         theme="dark"
-        position="top-center"
+        position="bottom-left"
+        className={"z-50"}
         autoClose={3000}
         style={{ fontSize: "0.8rem" }}
         // transition="slide"
