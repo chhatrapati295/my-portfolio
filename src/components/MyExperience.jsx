@@ -5,12 +5,12 @@ const ExperienceComp = () => {
   const monthCounter = currentTime.getMonth() - 3;
 
   return (
-    <div className="md:py-16 pb-0 pt-0 flex flex-col md:gap-16 gap-8 items-center">
+    <div className="md:py-16 md:pb-0 pb-10 pt-0 flex flex-col md:gap-16 gap-8 items-center">
       <h2 className="md:hidden font-medium uppercase">* Experience *</h2>
       <h2 className="text-5xl uppercase md:block hidden  font-bold whitespace-nowrap z-30 text-slate-400 animate-pulse opacity-25">
         Experience
       </h2>
-      <ul className="md:w-7/12 w-11/12 mx-auto flex flex-col gap-16 ">
+      <ul className="md:w-7/12 w-11/12 mx-auto flex flex-col md:gap-14 gap-10 bg-white bg-opacity-50 backdrop-blur-xl backdrop-saturate-150 backdrop-opacity-80  shadow-sm md:p-8 p-4 rounded-3xl z-30">
         <li className="flex-col gap-20">
           <div className="flex gap-3 items-center">
             <div className="flex w-6 h-6 justify-center items-center bg-blue-500 rounded-full">
@@ -34,8 +34,8 @@ const ExperienceComp = () => {
               from scratch and ensuring seamless integration of key financial
               services. <br /> In addition, I spearheaded performance
               optimization efforts, significantly enhancing application
-              efficiency and scalability. My focus on clean architecture
-              and code optimization improved system reliability and reduced load
+              efficiency and scalability. My focus on clean architecture and
+              code optimization improved system reliability and reduced load
               times. I effectively managed multiple project phases, from design
               to deployment, ensuring timely delivery.
             </p>

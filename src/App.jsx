@@ -25,7 +25,7 @@ function App() {
       /> */}
       <StarsCanvas />
       <Header />
-      <div className="flex flex-col md:gap-12 gap-6">
+      <div className="flex flex-col md:gap-12 gap-10">
         <Hero />
         <Suspense fallback={<div>Loading...</div>}>
           {/* <AboutMe /> */}
