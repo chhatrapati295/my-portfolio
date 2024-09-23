@@ -29,7 +29,7 @@ const ExperienceComp = () => {
               <span className="h-1 w-1 flex justify-center items-center bg-gray-400 rounded-full"></span>
               {monthCounter} months
             </p>
-            <p className="text-base text-gray-500">
+            <p className="md:text-base text-sm text-gray-500">
               I led the end-to-end development of a fintech project, building it
               from scratch and ensuring seamless integration of key financial
               services. <br /> In addition, I spearheaded performance
@@ -59,7 +59,7 @@ const ExperienceComp = () => {
               <span className="h-1 w-1 flex justify-center items-center bg-gray-400 rounded-full"></span>
               1 Year
             </p>
-            <p className="text-base text-gray-500">
+            <p className="md:text-base text-sm text-gray-500">
               I specialize in developing the frontend part of admin panel for my
               company. I&apos;ve created numerous reports and configured various
               forms to streamline processes. <br /> Additionally, I&apos;ve
