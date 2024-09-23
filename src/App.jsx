@@ -30,7 +30,7 @@ function App() {
         <Suspense fallback={<div>Loading...</div>}>
           {/* <AboutMe /> */}
           {/* <LeftPortion /> */}
-          {/* <ExperienceComp /> */}
+          <ExperienceComp />
           <Projects />
           <RightPortion />
           <Contact />
