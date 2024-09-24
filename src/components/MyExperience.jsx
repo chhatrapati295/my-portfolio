@@ -29,27 +29,79 @@ const ExperienceComp = () => {
               <span className="h-1 w-1 flex justify-center items-center bg-gray-400 rounded-full"></span>
               {monthCounter} months
             </p>
-            <p className="md:text-base text-sm text-gray-500">
-              I led the end-to-end development of a fintech project, building it
-              from scratch and ensuring seamless integration of key financial
-              services. <br /> In addition, I spearheaded performance
-              optimization efforts, significantly enhancing application
-              efficiency and scalability. My focus on clean architecture and
-              code optimization improved system reliability and reduced load
-              times. I effectively managed multiple project phases, from design
-              to deployment, ensuring timely delivery.
-            </p>
+            <div className="md:text-base text-sm text-gray-500">
+              <span className=" flex items-center gap-1">
+                <Icon
+                  icon="solar:medal-star-bold"
+                  color={"#fca311"}
+                  width="1em"
+                  height="1em"
+                />{" "}
+                Project 1 : Tofler
+              </span>
+              <p className="mb-2 text-sm">
+                Tech stack : Html , SASS/SCSS , JavaScript.
+              </p>
+              <p className="text-gray-400 text-sm">
+                Description : Developed the UI for the Tofler project using core
+                HTML, Sass/SCSS, and JavaScript, emphasizing high reusability.
+                Achieved a minimal CSS bundle size of just 10 KB, significantly
+                enhancing performance and load times. Leveraged best practices
+                to create a fast and efficient user experience. Delivered a
+                visually appealing and responsive interface, meeting project
+                goals effectively.
+              </p>
+            </div>
+
+            <div className="md:text-base text-sm text-gray-500 mt-2">
+              <span className=" flex items-center gap-1">
+                <Icon
+                  icon="solar:medal-star-bold"
+                  color={"#fca311"}
+                  width="1em"
+                  height="1em"
+                />{" "}
+                Project 2 : GrayPorter
+              </span>
+              <p className="mb-2 text-sm">
+                Tech stack : Html , SASS/SCSS , JavaScript.
+              </p>
+              <p className="text-gray-400 text-sm">
+                Description : Designed and developed the home page and main
+                product page for Grayporter using HTML, Sass/SCSS, and
+                JavaScript. Implemented a fully responsive layout, ensuring
+                optimal user experience across devices. Delivered a visually
+                appealing and functional interface that aligns with project
+                objectives.
+              </p>
+            </div>
+
+            <div className="md:text-base text-sm text-gray-500 mt-2">
+              <span className=" flex items-center gap-1">
+                <Icon
+                  icon="solar:medal-star-bold"
+                  color={"#fca311"}
+                  width="1em"
+                  height="1em"
+                />{" "}
+                Project 3 : Qyubic
+              </span>
+              <p className="mb-2 text-sm">
+                Tech stack : Next js , Tailwind CSS , Performance optimisation.
+              </p>
+              <p className="text-gray-400 text-sm">
+                Description : Significantly optimized the project&apos;s
+                performance, achieving a 2.5x improvement on desktop and a 6x
+                increase on mobile by addressing and preventing Cumulative
+                Layout Shift (CLS) , LCP issues.
+              </p>
+            </div>
           </div>
         </li>
         <li className="flex-col gap-20">
           <div className="flex gap-3 items-center">
-            <div className="flex w-6 h-6 justify-center items-center bg-blue-500 rounded-full">
-              <Icon
-                icon="mdi:shield-person"
-                width="1em"
-                height="1em"
-                style={{ color: "white" }}
-              />
+            <div className="flex w-6 h-6 justify-center items-center text-white bg-blue-500 rounded-full">
+              <Icon icon="mdi:shield-person" width="1em" height="1em" />
             </div>
             <h3 className="text-lg">JP Funware Pvt Ltd</h3>
           </div>
@@ -59,15 +111,15 @@ const ExperienceComp = () => {
               <span className="h-1 w-1 flex justify-center items-center bg-gray-400 rounded-full"></span>
               1 Year
             </p>
-            <p className="md:text-base text-sm text-gray-500">
-              I specialize in developing the frontend part of admin panel for my
-              company. I&apos;ve created numerous reports and configured various
-              forms to streamline processes. <br /> Additionally, I&apos;ve
-              implemented a permission flow system, allowing precise control
-              over which features are accessible to users. <br /> Ensuring
-              accessibility, I&apos;ve made the admin panel mobile responsive.
-              With a focus on clean code, I prioritize user experience and
-              efficient functionality.
+            <p className="text-sm text-gray-400">
+              I specialized in developing the frontend part of admin panel for
+              my company. I&apos;ve created numerous reports and configured
+              various forms to streamline processes. <br /> Additionally,
+              I&apos;ve implemented a permission flow system, allowing precise
+              control over which features are accessible to users. <br />{" "}
+              Ensuring accessibility, I&apos;ve made the admin panel mobile
+              responsive. With a focus on clean code, I prioritize user
+              experience and efficient functionality.
             </p>
           </div>
         </li>
