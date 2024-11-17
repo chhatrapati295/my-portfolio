@@ -29,23 +29,24 @@ const ExperienceComp = () => {
               <span className="h-1 w-1 flex justify-center items-center bg-gray-400 rounded-full"></span>
               {monthCounter} months
             </p>
-            <div className="md:text-base text-sm text-gray-500">
-              <span className=" flex items-center gap-1">
-                <Icon
+            <div className="md:text-sm text-sm text-gray-500">
+              <span className=" flex items-center gap-1 font-medium">
+                {/* <Icon
                   icon="solar:medal-star-bold"
                   color={"#fca311"}
                   width="1em"
                   height="1em"
-                />{" "}
-                Project 1 : Tofler
+                />{" "} */}
+                <a href="https://www.tofler.in/" className='flex items-center gap-1' target="_blank">Project 1 : Tofler <Icon icon="heroicons-solid:external-link" className='text-blue-500'  width="1em"
+                  height="1em" /></a>
               </span>
-              <p className="mb-2 text-sm">
+              <p className="mb-2 text-sm text-gray-400">
                 Tech stack : Html , SASS/SCSS , JavaScript.
               </p>
               <p className="text-gray-400 text-sm">
-                Description : Developed the UI for the Tofler project using core
-                HTML, Sass/SCSS, and JavaScript, emphasizing high reusability.
-                Achieved a minimal CSS bundle size of just 10 KB, significantly
+                Description : Developed the UI for the <span className="">Tofler project from scratch</span> using core
+                HTML, Sass/SCSS, and JavaScript, emphasizing high reusability. 
+                <span className=""> Achieved a minimal CSS bundle size of just 10 KB</span>, significantly
                 enhancing performance and load times. Leveraged best practices
                 to create a fast and efficient user experience. Delivered a
                 visually appealing and responsive interface, meeting project
@@ -53,17 +54,18 @@ const ExperienceComp = () => {
               </p>
             </div>
 
-            <div className="md:text-base text-sm text-gray-500 mt-2">
-              <span className=" flex items-center gap-1">
-                <Icon
+            <div className="md:text-sm text-sm text-gray-500 mt-2">
+              <span className=" flex items-center gap-1 font-medium">
+                {/* <Icon
                   icon="solar:medal-star-bold"
                   color={"#fca311"}
                   width="1em"
                   height="1em"
-                />{" "}
-                Project 2 : GrayPorter
+                />{" "} */}
+                <a href="https://www.grayporter.com/home/us/" className='flex items-center gap-1' target="_blank">Project 2 : GrayPorter <Icon icon="heroicons-solid:external-link" className='text-blue-500'  width="1em"
+                  height="1em" /></a>
               </span>
-              <p className="mb-2 text-sm">
+              <p className="mb-2 text-sm text-gray-400">
                 Tech stack : Html , SASS/SCSS , JavaScript.
               </p>
               <p className="text-gray-400 text-sm">
@@ -76,23 +78,24 @@ const ExperienceComp = () => {
               </p>
             </div>
 
-            <div className="md:text-base text-sm text-gray-500 mt-2">
-              <span className=" flex items-center gap-1">
-                <Icon
+            <div className="md:text-sm text-sm text-gray-500 mt-2">
+              <span className=" flex items-center gap-1 font-medium">
+                {/* <Icon
                   icon="solar:medal-star-bold"
                   color={"#fca311"}
                   width="1em"
                   height="1em"
-                />{" "}
-                Project 3 : Qyubic
+                />{" "} */}
+                <a href="https://qyubic.com/uae-en/" className='flex items-center gap-1' target="_blank">Project 3 : Qyubic <Icon icon="heroicons-solid:external-link" className='text-blue-500'  width="1em"
+                  height="1em" /></a>
               </span>
-              <p className="mb-2 text-sm">
+              <p className="mb-2 text-sm text-gray-400">
                 Tech stack : Next js , Tailwind CSS , Performance optimisation.
               </p>
               <p className="text-gray-400 text-sm">
                 Description : Significantly optimized the project&apos;s
-                performance, achieving a 2.5x improvement on desktop and a 6x
-                increase on mobile by addressing and preventing Cumulative
+                performance, <span className="">achieved a 2.5x improvement on desktop and a 6x
+                increase on mobile</span> by addressing and preventing Cumulative
                 Layout Shift (CLS) , LCP issues.
               </p>
             </div>

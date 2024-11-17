@@ -11,10 +11,10 @@ const Header = () => {
         <li className="hover:text-blue-600 cursor-pointer">Contact</li>
       </ul>
       <div className="contact_icons">
-        <a href="https://www.linkedin.com/in/chhatrapati8279/">
+        <a target="_blank" href="https://www.linkedin.com/in/chhatrapati8279/">
           <i className="fa-brands fa-linkedin"></i>
         </a>
-        <a href="https://github.com/chhatrapati295">
+        <a target="_blank" href="https://github.com/chhatrapati295">
           <i className="fa-brands fa-github"></i>
         </a>
       </div>

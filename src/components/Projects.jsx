@@ -20,6 +20,9 @@ const Projects = () => {
           return <ProjectCard key={i} projectData={item} />;
         })}
       </div>
+      <h4 className="md:text-2xl font-bold whitespace-nowrap z-30  animate-bounce opacity-25">
+        Coming soon...
+      </h4>
     </div>
   );
 };
