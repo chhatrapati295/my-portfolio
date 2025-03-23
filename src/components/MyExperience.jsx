@@ -1,8 +1,25 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 
 const ExperienceComp = () => {
-  const currentTime = new Date();
-  const monthCounter = currentTime.getMonth() - 3;
+  const startDate = new Date("2024-05-01"); // Start date
+  const currentDate = new Date();
+
+  // Calculate total months of experience
+  const totalMonths =
+    (currentDate.getFullYear() - startDate.getFullYear()) * 12 +
+    (currentDate.getMonth() - startDate.getMonth());
+
+  // Convert to years and months
+  const years = Math.floor(totalMonths / 12);
+  const months = totalMonths % 12;
+
+  // Format the experience string
+  const experienceString =
+    years > 0
+      ? `${years} ${years === 1 ? "Year" : "Years"}${
+          months > 0 ? ` ${months} ${months === 1 ? "Month" : "Months"}` : ""
+        }`
+      : `${months} ${months === 1 ? "Month" : "Months"}`;
 
   return (
     <div className="md:py-16 md:pb-0 pb-10 pt-0 flex flex-col md:gap-16 gap-8 items-center">
@@ -27,7 +44,7 @@ const ExperienceComp = () => {
             <p className="text-sm text-gray-400 flex items-center gap-3">
               May 2024 - Present{" "}
               <span className="h-1 w-1 flex justify-center items-center bg-gray-400 rounded-full"></span>
-              {monthCounter} months
+              {experienceString}
             </p>
             <div className="md:text-sm text-sm text-gray-500">
               <span className=" flex items-center gap-1 font-medium">
@@ -37,20 +54,35 @@ const ExperienceComp = () => {
                   width="1em"
                   height="1em"
                 />{" "} */}
-                <a href="https://www.tofler.in/" className='flex items-center gap-1' target="_blank">Project 1 : Tofler <Icon icon="heroicons-solid:external-link" className='text-blue-500'  width="1em"
-                  height="1em" /></a>
+                <a
+                  href="https://www.tofler.in/"
+                  className="flex items-center gap-1"
+                  target="_blank"
+                >
+                  Project 1 : Tofler{" "}
+                  <Icon
+                    icon="heroicons-solid:external-link"
+                    className="text-blue-500"
+                    width="1em"
+                    height="1em"
+                  />
+                </a>
               </span>
               <p className="mb-2 text-sm text-gray-400">
                 Tech stack : Html , SASS/SCSS , JavaScript.
               </p>
               <p className="text-gray-400 text-sm">
-                Description : Developed the UI for the <span className="">Tofler project from scratch</span> using core
-                HTML, Sass/SCSS, and JavaScript, emphasizing high reusability. 
-                <span className=""> Achieved a minimal CSS bundle size of just 10 KB</span>, significantly
-                enhancing performance and load times. Leveraged best practices
-                to create a fast and efficient user experience. Delivered a
-                visually appealing and responsive interface, meeting project
-                goals effectively.
+                Description : Developed the UI for the{" "}
+                <span className="">Tofler project from scratch</span> using core
+                HTML, Sass/SCSS, and JavaScript, emphasizing high reusability.
+                <span className="">
+                  {" "}
+                  Achieved a minimal CSS bundle size of just 10 KB
+                </span>
+                , significantly enhancing performance and load times. Leveraged
+                best practices to create a fast and efficient user experience.
+                Delivered a visually appealing and responsive interface, meeting
+                project goals effectively.
               </p>
             </div>
 
@@ -62,8 +94,19 @@ const ExperienceComp = () => {
                   width="1em"
                   height="1em"
                 />{" "} */}
-                <a href="https://www.grayporter.com/home/us/" className='flex items-center gap-1' target="_blank">Project 2 : GrayPorter <Icon icon="heroicons-solid:external-link" className='text-blue-500'  width="1em"
-                  height="1em" /></a>
+                <a
+                  href="https://www.grayporter.com/home/us/"
+                  className="flex items-center gap-1"
+                  target="_blank"
+                >
+                  Project 2 : GrayPorter{" "}
+                  <Icon
+                    icon="heroicons-solid:external-link"
+                    className="text-blue-500"
+                    width="1em"
+                    height="1em"
+                  />
+                </a>
               </span>
               <p className="mb-2 text-sm text-gray-400">
                 Tech stack : Html , SASS/SCSS , JavaScript.
@@ -80,23 +123,63 @@ const ExperienceComp = () => {
 
             <div className="md:text-sm text-sm text-gray-500 mt-2">
               <span className=" flex items-center gap-1 font-medium">
-                {/* <Icon
-                  icon="solar:medal-star-bold"
-                  color={"#fca311"}
-                  width="1em"
-                  height="1em"
-                />{" "} */}
-                <a href="https://qyubic.com/uae-en/" className='flex items-center gap-1' target="_blank">Project 3 : Qyubic <Icon icon="heroicons-solid:external-link" className='text-blue-500'  width="1em"
-                  height="1em" /></a>
+                <a
+                  href="https://qyubic.com/uae-en/"
+                  className="flex items-center gap-1"
+                  target="_blank"
+                >
+                  Project 3 : Qyubic{" "}
+                  <Icon
+                    icon="heroicons-solid:external-link"
+                    className="text-blue-500"
+                    width="1em"
+                    height="1em"
+                  />
+                </a>
               </span>
               <p className="mb-2 text-sm text-gray-400">
                 Tech stack : Next js , Tailwind CSS , Performance optimisation.
               </p>
               <p className="text-gray-400 text-sm">
                 Description : Significantly optimized the project&apos;s
-                performance, <span className="">achieved a 2.5x improvement on desktop and a 6x
-                increase on mobile</span> by addressing and preventing Cumulative
-                Layout Shift (CLS) , LCP issues.
+                performance,{" "}
+                <span className="">
+                  achieved a 2.5x improvement on desktop and a 6x increase on
+                  mobile
+                </span>{" "}
+                by addressing and preventing Cumulative Layout Shift (CLS) , LCP
+                issues.
+              </p>
+            </div>
+
+            <div className="md:text-sm text-sm text-gray-500 mt-2">
+              <span className=" flex items-center gap-1 font-medium">
+                <a
+                  href="https://acadru.com/"
+                  className="flex items-center gap-1"
+                  target="_blank"
+                >
+                  Project 4 : ACadru{" "}
+                  <Icon
+                    icon="heroicons-solid:external-link"
+                    className="text-blue-500"
+                    width="1em"
+                    height="1em"
+                  />
+                </a>
+              </span>
+              <p className="mb-2 text-sm text-gray-400">
+                Tech stack : Express handlebars , React.
+              </p>
+              <p className="text-gray-400 text-sm">
+                Description : Optimized ACardru&apos;s blog and project pages
+                with SEO strategies like webpage schema (Article, Video, List,
+                Organization) and keyword integration. Enhanced UI/UX by adding
+                a Table of Contents, author info, and interactive features.
+                Improved mobile responsiveness, load times, and organic
+                rankings. Utilized tools like Google Search Console. Achieved
+                higher engagement, lower bounce rates, and better search
+                visibility.
               </p>
             </div>
           </div>
