@@ -58,3 +58,46 @@ export const ProjectsData = [
   //   techStack: ["react.js", "scss", "Openlayer's library"],
   // },
 ];
+
+export const EXPERIENCE_DATA = [
+  {
+    id: 1,
+    projectName: "Squareboat",
+    projectUrl: "https://www.squareboat.com/",
+    techStack: "Next js, Tailwind CSS",
+    description:
+      "I was primarily responsible for the frontend development of the Squareboat website. I built several key pages including the Home, Careers, Open Source, Business Verticals, and Services Details, focusing on clean design and a seamless user experience. I also implemented SEO best practices from the start—adding structured metadata, semantic HTML, and optimizing performance to improve visibility and load times. Tailwind CSS was used for consistent and responsive styling.",
+  },
+  {
+    id: 2,
+    projectName: "Tofler",
+    projectUrl: "https://www.tofler.in/",
+    techStack: "Html , SASS/SCSS , JavaScript",
+    description:
+      "Developed the UI for the Tofler project from scratch using core HTML, Sass/SCSS, and JavaScript, emphasizing high reusability. Achieved a minimal CSS bundle size of just 10 KB, significantly enhancing performance and load times. Leveraged best practices to create a fast and efficient user experience. Delivered a visually appealing and responsive interface, meeting project goals effectively.",
+  },
+  {
+    id: 3,
+    projectName: "Find My College",
+    projectUrl: "https://findmycollege.com/",
+    techStack: "Next js, Tailwind CSS",
+    description:
+      "Find My College is a fully custom-built project developed entirely by me from scratch. It helps users discover the best colleges based on their preferences, with a fast, intuitive, and user-friendly interface. The platform is highly optimized for performance and SEO, ensuring quick load times and excellent search visibility. Built with clean, scalable code, it offers a solid foundation for future enhancements.",
+  },
+  {
+    id: 4,
+    projectName: "ACadru",
+    projectUrl: "https://acadru.com/",
+    techStack: "Express handlebars , React",
+    description:
+      "Optimized ACardru's blog and project pages with SEO strategies like webpage schema (Article, Video, List, Organization) and keyword integration. Enhanced UI/UX by adding a Table of Contents, author info, and interactive features. Improved mobile responsiveness, load times, and organic rankings. Utilized tools like Google Search Console. Achieved higher engagement, lower bounce rates, and better search visibility.",
+  },
+  {
+    id: 5,
+    projectName: "Qyubic",
+    projectUrl: "https://qyubic.com/uae-en/",
+    techStack: "Next js , Tailwind CSS , Performance optimisation",
+    description:
+      "Significantly optimized the project's performance, achieved a 2.5x improvement on desktop and a 6x increase on mobile by addressing and preventing Cumulative Layout Shift (CLS) , LCP issues.",
+  },
+];
