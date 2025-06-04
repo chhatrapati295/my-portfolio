@@ -41,7 +41,7 @@ const ExperienceComp = () => {
             </div>
             <h3 className="text-lg">Squareboat Solutions Pvt Ltd</h3>
           </div>
-          <div className=" border-l border-gray-400 px-6 mx-3 my-1 flex flex-col gap-3">
+          <div className=" border-l border-gray-400 px-6 mx-3 my-1 flex flex-col md:gap-3 gap-6">
             <p className="text-sm text-gray-400 flex items-center flex-wrap gap-x-3">
               May 2024 - Present{" "}
               <span className="h-1 w-1 flex justify-center items-center bg-gray-400 rounded-full"></span>
@@ -51,12 +51,12 @@ const ExperienceComp = () => {
               return (
                 <div
                   key={item?.id}
-                  className="md:text-base text-sm text-gray-500"
+                  className="text-base text-gray-500"
                 >
                   <span className=" flex items-center gap-1 font-medium">
                     <a
                       href={item?.projectUrl}
-                      className="flex items-center gap-1"
+                      className="flex items-center gap-1 mb-1 md:mb-0 text-lg md:text-base"
                       target="_blank"
                     >
                       Project {item?.id} : {item?.projectName}
