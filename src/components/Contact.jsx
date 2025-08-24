@@ -16,20 +16,19 @@ const Contact = memo(() => {
 
   return (
     <section
-      className="py-10 md:w-11/12 w-10/12 m-auto flex gap-10 justify-between xl:flex-row md:flex-col flex-col z-30"
+      className="z-30 flex flex-col justify-between w-10/12 gap-10 py-10 m-auto md:w-11/12 xl:flex-row md:flex-col"
       id="contact"
     >
       <div className="flex flex-col md:h-60">
-        <h2 className="font-bold text-sm text-blue-600">CONTACT</h2>
-        <h3 className="font-bold text-2xl">
+        <h2 className="text-sm font-bold text-blue-600">CONTACT</h2>
+        <h3 className="text-2xl font-bold">
           Don&apos;t be shy, Send me Hi{" "}
           <span className="hidden md:inline-block">🚀</span>
         </h3>
-        <div className="flex md:gap-12 gap-2 md:justify-between font-medium md:flex-row xl:flex flex-col md:m-0 mt-8">
-          <div className="flex md:flex-col xl:flex-row gap-6 items-center md:my-10 xl:my-10">
+        <div className="flex flex-col gap-2 mt-8 font-medium md:gap-12 md:justify-between md:flex-row xl:flex md:m-0">
+          <div className="flex items-center gap-6 md:flex-col xl:flex-row md:my-10 xl:my-10">
             <div
-              className="w-14 h-14 rounded-full border border-gray-300 hover:shadow-md cursor-pointer flex justify-center items-center text-2xl text-blue-600"
-              aria-label="Location"
+              className="flex items-center justify-center text-2xl text-blue-600 border border-gray-300 rounded-full cursor-pointer w-14 h-14 hover:shadow-md"
             >
               <i
                 className="fa-solid fa-map-location-dot"
@@ -38,16 +37,16 @@ const Contact = memo(() => {
             </div>
             <div className="flex flex-col gap-[2px] md:items-center xl:items-start">
               <span className="text-sm text-gray-500">Location</span>
-              <span className="text-sm text-gray-700 hover:text-blue-600 cursor-pointer">
+              <span className="text-sm text-gray-700 cursor-pointer hover:text-blue-600">
                 Gurugram, India
               </span>
             </div>
           </div>
 
-          <div className="flex md:flex-col xl:flex-row gap-6 items-center md:my-10">
+          <div className="flex items-center gap-6 md:flex-col xl:flex-row md:my-10">
             <button
               onClick={handleEmailClick}
-              className="w-14 h-14 rounded-full border border-gray-300 hover:shadow-md cursor-pointer flex justify-center items-center text-2xl text-blue-600"
+              className="flex items-center justify-center text-2xl text-blue-600 border border-gray-300 rounded-full cursor-pointer w-14 h-14 hover:shadow-md"
               aria-label="Send email"
             >
               <i className="fa-solid fa-envelope" aria-hidden="true"></i>
@@ -56,16 +55,16 @@ const Contact = memo(() => {
               <span className="text-sm text-gray-500">Mail</span>
               <button
                 onClick={handleEmailClick}
-                className="text-sm text-gray-700 hover:text-blue-600 cursor-pointer"
+                className="text-sm text-gray-700 cursor-pointer hover:text-blue-600"
               >
                 chhatrapati1511@gmail.com
               </button>
             </div>
           </div>
 
-          <div className="flex md:flex-col xl:flex-row gap-6 items-center md:my-10">
+          <div className="flex items-center gap-6 md:flex-col xl:flex-row md:my-10">
             <button
-              className="w-14 h-14 rounded-full border border-gray-300 hover:shadow-md cursor-pointer flex justify-center items-center text-2xl text-blue-600"
+              className="flex items-center justify-center text-2xl text-blue-600 border border-gray-300 rounded-full cursor-pointer w-14 h-14 hover:shadow-md"
               onClick={handleWhatsAppClick}
               aria-label="Chat on WhatsApp"
             >
@@ -79,7 +78,7 @@ const Contact = memo(() => {
               <span className="text-sm text-gray-500">Message</span>
               <button
                 onClick={handleWhatsAppClick}
-                className="text-sm text-gray-700 hover:text-blue-600 cursor-pointer"
+                className="text-sm text-gray-700 cursor-pointer hover:text-blue-600"
               >
                 Chat on whatsapp
               </button>

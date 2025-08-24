@@ -8,7 +8,7 @@ const Hero = memo(() => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href =
-      "https://drive.google.com/file/d/1lWtb2kZIKmWPslwjg0UOUWtp2-kdaL79/view?usp=drive_link";
+      "https://drive.google.com/file/d/1CbMSea1tqlnzY4atcoDZPh5X_3lwl4pt/view?usp=sharing";
     link.target = "_blank";
     link.download = "chhatrapati_resume";
     document.body.appendChild(link);
