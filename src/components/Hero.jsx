@@ -44,16 +44,16 @@ const Hero = memo(() => {
           </div>
           <div className="flex items-center justify-center w-full gap-2 md:justify-start">
             <a
-              href="https://squareboat.com/"
+              href="https://www.gokwik.co/"
               target="_blank"
               rel="noopener noreferrer"
               className="md:text-[#7d7d7f] text-gray-700 text-center hover:text-blue-600"
             >
-              @ Squareboat, Gurugram 📍
+              @ GoKwik, Gurugram 📍
             </a>
           </div>
           <div className="mt-4 text-center md:text-balance md:text-start">
-            Hello, I&apos;m Chhatrapati Chauhan, a skilled Front-end Engineer.
+            Hello, I&apos;m Chhatrapati Chauhan, a skilled Front-end Engineer with 3+ years of experience.
             Specializing in creating visually appealing and user-friendly
             websites, I focus on delivering seamless and engaging user
             experiences.{" "}
